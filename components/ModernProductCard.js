@@ -90,7 +90,7 @@ const ModernProductCard = ({ product, showBadges = true }) => {
     >
       {/* Product Image Container */}
       <div className="relative w-full h-64 bg-gray-50 overflow-hidden">
-        <Link href={`/products/${product.id}`} className="block w-full h-full">
+        <Link href={`/products/product-detail?id=${product.id}`} className="block w-full h-full">
           <Image
             src={product.image}
             alt={product.title}
@@ -148,7 +148,7 @@ const ModernProductCard = ({ product, showBadges = true }) => {
               </>
             )}
           </button>
-          <Link href={`/products/${product.id}`}>
+            <Link href={`/products/product-detail?id=${product.id}`}>
             <button
               className="bg-white text-gray-900 hover:bg-gray-100 transform hover:scale-110 transition-all duration-300 shadow-lg px-4 py-2 rounded-lg font-semibold flex items-center space-x-2 border border-gray-300"
             >
@@ -165,7 +165,7 @@ const ModernProductCard = ({ product, showBadges = true }) => {
         <p className="text-sm text-gray-500 mb-2 capitalize">{product.category}</p>
         
         {/* Product Title */}
-        <Link href={`/products/${product.id}`}>
+            <Link href={`/products/product-detail?id=${product.id}`}>
           <h3 className="text-lg font-semibold text-gray-900 mb-2 line-clamp-2 group-hover:text-blue-600 transition-colors duration-200">
             {product.title}
           </h3>

@@ -1,22 +1,7 @@
-import { productAPI } from '../../../lib/api';
-
-// Generate static params for all products
-export async function generateStaticParams() {
-  try {
-    const products = await productAPI.getAll();
-    return products.map((product) => ({
-      id: product.id.toString(),
-    }));
-  } catch (error) {
-    console.error('Error generating static params:', error);
-    return [];
-  }
-}
-
 'use client';
 
 import { useState, useEffect } from 'react';
-import { useParams } from 'next/navigation';
+import { useSearchParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, Heart, ShoppingCart, Truck, Shield, RotateCcw, ArrowLeft } from 'lucide-react';
@@ -42,14 +27,15 @@ const ProductDetailPage = () => {
   
   const { addItem, isInCart } = useCart();
   const { toggleItem, isInWishlist } = useWishlist();
-  const params = useParams();
+  const searchParams = useSearchParams();
+  const id = searchParams.get('id');
 
   // Load product data
   useEffect(() => {
     const loadProduct = async () => {
       try {
         setLoading(true);
-        const productData = await productAPI.getById(params.id);
+        const productData = await productAPI.getById(id);
         setProduct(productData);
         
         // Load related products
@@ -62,10 +48,10 @@ const ProductDetailPage = () => {
       }
     };
 
-    if (params.id) {
+    if (id) {
       loadProduct();
     }
-  }, [params.id]);
+  }, [id]);
 
   // Handle add to cart
   const handleAddToCart = () => {

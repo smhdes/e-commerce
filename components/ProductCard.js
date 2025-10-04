@@ -42,7 +42,7 @@ const ProductCard = ({ product, showActions = true }) => {
 
   return (
     <Card className="group hover:shadow-lg transition-all duration-300" hover>
-      <Link href={`/products/${product.id}`} className="block">
+      <Link href={`/products/product-detail?id=${product.id}`} className="block">
         {/* Product Image */}
         <div className="relative aspect-square overflow-hidden rounded-t-lg">
           <Image
