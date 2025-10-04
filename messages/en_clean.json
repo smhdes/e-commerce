@@ -1,0 +1,181 @@
+{
+    "common": {
+        "addToCart": "Add to Cart",
+        "addToWishlist": "Add to Wishlist",
+        "viewProduct": "View Product",
+        "inCart": "In Cart",
+        "inWishlist": "In Wishlist",
+        "removeFromCart": "Remove from Cart",
+        "removeFromWishlist": "Remove from Wishlist",
+        "loading": "Loading...",
+        "error": "Error",
+        "success": "Success",
+        "cancel": "Cancel",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "search": "Search",
+        "filter": "Filter",
+        "sort": "Sort",
+        "price": "Price",
+        "rating": "Rating",
+        "reviews": "Reviews",
+        "category": "Category",
+        "brand": "Brand",
+        "description": "Description",
+        "specifications": "Specifications",
+        "features": "Features",
+        "shipping": "Shipping",
+        "freeShipping": "Free Shipping",
+        "secureShopping": "Secure Shopping",
+        "customerSupport": "Customer Support",
+        "returnPolicy": "Return Policy",
+        "warranty": "Warranty"
+    },
+    "navigation": {
+        "home": "Home",
+        "products": "Products",
+        "categories": "Categories",
+        "about": "About",
+        "contact": "Contact",
+        "login": "Login",
+        "logout": "Logout",
+        "register": "Register",
+        "profile": "Profile",
+        "orders": "My Orders",
+        "wishlist": "Wishlist",
+        "cart": "Cart",
+        "checkout": "Checkout",
+        "search": "Search",
+        "location": "Location",
+        "selectLocation": "Select Location",
+        "searchPlaceholder": "Search products, categories or brands...",
+        "topLinks": {
+            "orders": "My Orders",
+            "campaigns": "Campaigns",
+            "international": "International",
+            "womenEntrepreneurs": "Women Entrepreneurs",
+            "customerService": "Customer Service",
+            "premium": "Premium",
+            "sell": "Sell"
+        },
+        "categories": {
+            "electronics": "Electronics",
+            "fashion": "Fashion",
+            "home": "Home & Living",
+            "sports": "Sports",
+            "beauty": "Beauty",
+            "books": "Books"
+        }
+    },
+    "product": {
+        "addToCart": "Add to Cart",
+        "addToWishlist": "Add to Wishlist",
+        "viewProduct": "View Product",
+        "inCart": "In Cart",
+        "inWishlist": "In Wishlist",
+        "loading": "Loading...",
+        "badges": {
+            "featured": "Featured",
+            "new": "NEW",
+            "sale": "SALE",
+            "bestseller": "BESTSELLER"
+        }
+    },
+    "home": {
+        "hero": {
+            "title": "Modern E-Commerce",
+            "subtitle": "Experience",
+            "description": "Find everything you need. Redefine your shopping experience with quality products, fast shipping, and customer satisfaction-focused service.",
+            "startShopping": "Start Shopping",
+            "about": "About Us",
+            "categories": "Popular Categories",
+            "categoryNames": {
+                "electronics": "Electronics",
+                "fashion": "Fashion",
+                "home": "Home & Living",
+                "sports": "Sports",
+                "beauty": "Beauty",
+                "books": "Books"
+            },
+            "campaigns": {
+                "superPrice": "Super Price, Super Offer",
+                "superPriceDesc": "Unmissable discounts await you!",
+                "fastShipping": "Fast and Secure Shipping",
+                "fastShippingDesc": "Your orders at your door!",
+                "qualityGuarantee": "Quality Guarantee",
+                "qualityGuaranteeDesc": "Your satisfaction is our priority."
+            },
+            "featuredProducts": "Featured Products",
+            "viewAll": "View All"
+        },
+        "categories": {
+            "title": "Categories",
+            "description": "Easily find the products you need by category and discover the best prices"
+        },
+        "benefits": {
+            "title": "Why Hepsitrend?",
+            "description": "We make a difference with our customer satisfaction-oriented service approach",
+            "fastShipping": "Fast Shipping",
+            "fastShippingDesc": "Your orders are shipped within 24 hours",
+            "securePayment": "Secure Payment",
+            "securePaymentDesc": "Secure shopping experience with SSL certificate",
+            "easyReturn": "Easy Return",
+            "easyReturnDesc": "30-day free return guarantee",
+            "support": "24/7 Support",
+            "supportDesc": "Our customer service is always with you"
+        },
+        "featuredProducts": {
+            "title": "Featured Products",
+            "description": "Discover our most popular and quality products. The products our customers prefer most are here.",
+            "viewAll": "View All Products",
+            "error": "There was a problem loading products. Please try again later."
+        },
+        "stats": {
+            "title": "Hepsitrend in Numbers",
+            "description": "We have gained the trust of our customers with our reliable service and quality products",
+            "happyCustomers": "Happy Customers",
+            "productVariety": "Product Variety",
+            "customerSatisfaction": "Customer Satisfaction",
+            "customerSupport": "Customer Support"
+        },
+        "newsletter": {
+            "title": "Subscribe to Our Newsletter",
+            "description": "Stay informed about new products, special campaigns and discounts. Don't miss out on opportunities exclusive to you!",
+            "placeholder": "Your email address",
+            "subscribe": "Subscribe",
+            "privacy": "We don't send spam. You can unsubscribe at any time."
+        }
+    },
+    "footer": {
+        "features": {
+            "fastShipping": "Fast Shipping",
+            "fastShippingDesc": "Your orders are shipped within 24 hours",
+            "securePayment": "Secure Payment",
+            "securePaymentDesc": "Secure shopping with SSL certificate",
+            "easyReturn": "Easy Return",
+            "easyReturnDesc": "30-day free return guarantee"
+        },
+        "corporate": {
+            "title": "Corporate",
+            "about": "About Us",
+            "partners": "Our Partners",
+            "investors": "Investor Relations",
+            "support": "Customer Service",
+            "careers": "Careers",
+            "privacy": "Privacy Policy",
+            "security": "Information Security",
+            "contact": "Contact"
+        },
+        "hepsitrend": {
+            "title": "Hepsitrend",
+            "electronics": "Electronics",
+            "fashion": "Fashion",
+            "home": "Home & Living",
+            "sports": "Sports & Outdoor",
+            "beauty": "Beauty",
+            "books": "Books & Hobbies"
+        },
+        "copyright": "Hepsitrend. All rights reserved"
+    }
+}

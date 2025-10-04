@@ -1,0 +1,42 @@
+{
+    "name": "hepsitrend-ecommerce",
+    "version": "1.0.0",
+    "description": "Modern e-commerce site built with Next.js 15, React, and Tailwind CSS",
+    "private": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "next start",
+        "lint": "next lint",
+        "seed": "node data/seed.js",
+        "db": "json-server --watch db.json --port 3001",
+        "dev:all": "concurrently \"npm run db\" \"npm run dev\"",
+        "setup": "npm run seed && npm run dev:all"
+    },
+    "dependencies": {
+        "@reduxjs/toolkit": "^2.0.0",
+        "axios": "^1.6.0",
+        "js-cookie": "^3.0.5",
+        "lucide-react": "^0.300.0",
+        "next": "^15.0.0",
+        "next-intl": "^4.3.9",
+        "react": "^18.2.0",
+        "react-dom": "^18.2.0",
+        "react-hot-toast": "^2.4.1",
+        "react-redux": "^9.0.0",
+        "redux-persist": "^6.0.0"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.0",
+        "concurrently": "^8.2.0",
+        "critters": "^0.0.25",
+        "eslint": "^8.0.0",
+        "eslint-config-next": "^15.0.0",
+        "json-server": "^0.17.4",
+        "postcss": "^8.4.0",
+        "tailwindcss": "^3.4.0"
+    },
+    "engines": {
+        "node": ">=18.0.0"
+    }
+}
