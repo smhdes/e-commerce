@@ -1,5 +1,3 @@
-'use client';
-
 import { productAPI } from '../../../lib/api';
 
 // Generate static params for all products
@@ -14,6 +12,8 @@ export async function generateStaticParams() {
     return [];
   }
 }
+
+'use client';
 
 import { useState, useEffect } from 'react';
 import { useParams } from 'next/navigation';
