@@ -1,3 +1,18 @@
+import { productAPI } from '../../../lib/api';
+
+// Generate static params for all products
+export async function generateStaticParams() {
+  try {
+    const products = await productAPI.getAll();
+    return products.map((product) => ({
+      id: product.id.toString(),
+    }));
+  } catch (error) {
+    console.error('Error generating static params:', error);
+    return [];
+  }
+}
+
 'use client';
 
 import { useState, useEffect } from 'react';
@@ -5,7 +20,6 @@ import { useParams } from 'next/navigation';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Star, Heart, ShoppingCart, Truck, Shield, RotateCcw, ArrowLeft } from 'lucide-react';
-import { productAPI } from '../../../lib/api';
 import { useCart } from '../../../contexts/CartContext';
 import { useWishlist } from '../../../contexts/WishlistContext';
 import { formatPrice, getRatingStars } from '../../../lib/utils';
