@@ -3,7 +3,7 @@
 import { Suspense, useState, useEffect } from 'react';
 import Link from 'next/link';
 import { ArrowRight, Truck, Shield, RotateCcw, Gift, Award, Users, Clock } from 'lucide-react';
-import { staticProducts } from '../data/static-products';
+import { productAPI } from '../lib/api';
 import ModernProductCard from '../components/ModernProductCard';
 import CategoryGrid from '../components/CategoryGrid';
 import ModernHero from '../components/ModernHero';
@@ -114,9 +114,20 @@ const FeaturedProductsSection = () => {
   const [loading, setLoading] = useState(true);
   
   useEffect(() => {
-    // Use static products for static export compatibility
-    setFeaturedProducts(staticProducts.slice(0, 8));
-    setLoading(false);
+    const loadProducts = async () => {
+      try {
+        const products = await productAPI.getAll();
+        setFeaturedProducts(products.slice(0, 8));
+      } catch (error) {
+        // Error loading products
+        // Fallback to static products if API fails
+        setFeaturedProducts([]);
+      } finally {
+        setLoading(false);
+      }
+    };
+    
+    loadProducts();
   }, []);
 
   if (loading) {
