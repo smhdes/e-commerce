@@ -69,9 +69,23 @@ export function LanguageProvider({ children }) {
       return key;
     }
 
-    // During SSR or before hydration, return the key to avoid hydration mismatch
+    // During SSR or before hydration, return a fallback text to avoid showing keys
     if (!isHydrated || Object.keys(messages).length === 0) {
-      return key;
+      // Return a fallback text instead of the key
+      const fallbacks = {
+        'home.featuredProducts.title': 'Öne Çıkan Ürünler',
+        'home.featuredProducts.description': 'En popüler ve kaliteli ürünlerimizi keşfedin',
+        'home.categories.title': 'Kategoriler',
+        'home.categories.description': 'İhtiyacınıza uygun kategorileri keşfedin',
+        'home.stats.title': 'Neden Hepsitrend?',
+        'home.stats.description': 'Müşterilerimizin tercih ettiği özellikler',
+        'product.addToCart': 'Sepete Ekle',
+        'home.featuredProducts.viewAll': 'Tümünü Gör',
+        'footer.features.fastShipping': 'Hızlı Kargo',
+        'footer.features.securePayment': 'Güvenli Ödeme',
+        'footer.features.easyReturn': 'Kolay İade'
+      };
+      return fallbacks[key] || key;
     }
 
     const keys = key.split('.');
