@@ -90,11 +90,11 @@ const LoginPage = () => {
       <div className="max-w-md w-full space-y-8">
         {/* Header */}
         <div className="text-center">
-          <div className="flex items-center justify-center space-x-2 mb-6">
-            <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-sm">M</span>
+          <div className="flex items-center justify-center mb-6">
+            <div className="w-12 h-12 bg-gradient-to-r from-blue-600 to-purple-600 rounded-xl flex items-center justify-center shadow-lg">
+              <span className="text-white font-bold text-lg">H</span>
             </div>
-            <span className="text-2xl font-bold text-gray-900">Mobiversite</span>
+            <span className="text-2xl font-bold text-gray-900 ml-3">Hepsitrend</span>
           </div>
           <h2 className="text-3xl font-bold text-gray-900">
             Hesabınıza Giriş Yapın

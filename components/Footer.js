@@ -52,10 +52,10 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-primary-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-sm">M</span>
+              <div className="w-8 h-8 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
+                <span className="text-white font-bold text-sm">H</span>
               </div>
-              <span className="text-xl font-bold">Mobiversite</span>
+              <span className="text-xl font-bold">Hepsitrend</span>
             </div>
             
             <p className="text-gray-300 mb-6 max-w-md">
@@ -157,7 +157,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
             {/* Copyright */}
             <p className="text-gray-400 text-sm">
-              © {currentYear} Mobiversite. Tüm hakları saklıdır.
+              © {currentYear} Hepsitrend. Tüm hakları saklıdır.
             </p>
 
             {/* Social Links */}
