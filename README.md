@@ -2,6 +2,12 @@
 
 A modern, full-featured e-commerce website built with Next.js 15, React, and Tailwind CSS. Features user authentication, cart management, wishlist, order tracking, and multilingual support.
 
+## 🌐 Live Demo
+
+**🔗 [View Live Site](https://68e35bea56799a00084bb1ff--magical-selkie-0ec932.netlify.app/)**
+
+The application is deployed on Netlify and ready to use!
+
 ## 🚀 Features
 
 ### Core Features
@@ -33,32 +39,68 @@ A modern, full-featured e-commerce website built with Next.js 15, React, and Tai
 - **Database**: JSON Server (local development)
 - **Deployment**: Netlify ready
 
-## 📦 Installation
+## 📦 Installation & Setup
 
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/smhdes/e-commerce.git
-   cd e-commerce
-   ```
+### Prerequisites
+- **Node.js** (v18 or higher) - [Download here](https://nodejs.org/)
+- **npm** (v8 or higher) - Comes with Node.js
+- **Git** - [Download here](https://git-scm.com/)
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+### Step-by-Step Setup
 
-3. **Seed the database**
-   ```bash
-   npm run seed
-   ```
+#### 1. **Clone the Repository**
+```bash
+git clone https://github.com/smhdes/e-commerce.git
+cd e-commerce
+```
 
-4. **Start development servers**
-   ```bash
-   npm run dev:all
-   ```
+#### 2. **Install Dependencies**
+```bash
+npm install
+```
+This will install all required packages including Next.js 15, React, Tailwind CSS, and other dependencies.
 
-   This will start:
-   - Next.js development server on `http://localhost:3000`
-   - JSON Server API on `http://localhost:3001`
+#### 3. **Seed the Database**
+```bash
+npm run seed
+```
+This command will:
+- Create sample product data from fakestoreapi.com
+- Set up user accounts for testing
+- Initialize the JSON server database
+
+#### 4. **Start Development Servers**
+
+**Option A: Run Both Servers Simultaneously (Recommended)**
+```bash
+npm run dev:all
+```
+This will start both Next.js development server and JSON server concurrently.
+
+**Option B: Run Servers Separately**
+```bash
+# Terminal 1: Start Next.js dev server
+npm run dev
+
+# Terminal 2: Start JSON server  
+npm run db
+```
+
+#### 5. **Access the Application**
+- **Frontend**: http://localhost:3000
+- **API Server**: http://localhost:3001
+- **Database**: JSON file at `data/db.json`
+
+### 🔧 Development Commands
+
+| Command | Description |
+|---------|-------------|
+| `npm run dev` | Start Next.js development server |
+| `npm run db` | Start JSON server for API |
+| `npm run dev:all` | Start both servers concurrently |
+| `npm run build` | Build for production |
+| `npm run seed` | Seed the database with sample data |
+| `npm run setup` | Complete setup (install + seed + start) |
 
 ## 🚀 Quick Start
 
@@ -105,6 +147,22 @@ The JSON Server provides the following endpoints:
 - Session persistence
 - User-specific cart and wishlist data
 - Automatic logout on session expiry
+
+## 🔐 Demo Credentials
+
+For testing purposes, you can use these demo accounts:
+
+| Email | Password | Name |
+|-------|----------|------|
+| `user@example.com` | `pass123` | John Doe |
+| `jane@example.com` | `pass123` | Jane Smith |
+
+### Test Features
+- **Login/Logout**: Use demo credentials above
+- **Cart Management**: Add/remove products, update quantities
+- **Wishlist**: Save products for later
+- **Order History**: View past orders in profile
+- **Language Switch**: TR/EN toggle in header
 
 ## 🌍 Internationalization
 
@@ -155,17 +213,40 @@ API_BASE_URL=http://localhost:3001
 
 ## 📦 Deployment
 
-### Netlify Deployment
-1. Connect your GitHub repository to Netlify
-2. Set build command: `npm run build`
-3. Set publish directory: `.next`
-4. Deploy!
+### 🌐 Live Deployment
+The application is currently deployed on Netlify:
+- **Live URL**: https://68e35bea56799a00084bb1ff--magical-selkie-0ec932.netlify.app/
+- **Platform**: Netlify
+- **Build**: Static export with API integration
+- **Status**: ✅ Active and running
 
-### Manual Deployment
+### 🚀 Netlify Deployment Steps
+1. **Connect Repository**: Link your GitHub repository to Netlify
+2. **Build Settings**:
+   - Build command: `npm run build`
+   - Publish directory: `out`
+   - Node version: 18
+3. **Environment Variables** (if needed):
+   - `NODE_VERSION`: 18
+   - `NEXT_TELEMETRY_DISABLED`: 1
+4. **Deploy**: Netlify will automatically deploy on every push
+
+### 🔧 Manual Deployment
 ```bash
+# Build for production
 npm run build
-npm run start
+
+# The build output will be in the 'out' directory
+# Upload the 'out' directory to your hosting provider
 ```
+
+### 📋 Deployment Checklist
+- ✅ Static export configured
+- ✅ API integration working
+- ✅ Image optimization enabled
+- ✅ Responsive design tested
+- ✅ Performance optimized
+- ✅ SEO meta tags configured
 
 ## 🚀 Performance
 
