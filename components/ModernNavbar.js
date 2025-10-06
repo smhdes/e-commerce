@@ -80,7 +80,8 @@ const ModernNavbar = () => {
       <div className="bg-gray-900 text-white text-sm py-2">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-6">
+            {/* Desktop Links */}
+            <div className="hidden lg:flex items-center space-x-6">
               <Link href="/orders" className="hover:text-blue-400 transition-colors duration-200">
                 {t('navigation.topLinks.orders')}
               </Link>
@@ -89,9 +90,6 @@ const ModernNavbar = () => {
               </Link>
               <Link href="/international" className="hover:text-blue-400 transition-colors duration-200">
                 {t('navigation.topLinks.international')}
-              </Link>
-              <Link href="/campaigns" className="hover:text-blue-400 transition-colors duration-200">
-                {t('navigation.topLinks.campaigns')}
               </Link>
               <Link href="/women-entrepreneurs" className="text-red-400 hover:text-red-300 transition-colors duration-200">
                 {t('navigation.topLinks.womenEntrepreneurs')}
@@ -106,10 +104,40 @@ const ModernNavbar = () => {
                 {t('navigation.topLinks.sell')}
               </Link>
             </div>
+            
+            {/* Tablet Links */}
+            <div className="hidden md:flex lg:hidden items-center space-x-4">
+              <Link href="/orders" className="hover:text-blue-400 transition-colors duration-200">
+                {t('navigation.topLinks.orders')}
+              </Link>
+              <Link href="/campaigns" className="hover:text-blue-400 transition-colors duration-200">
+                {t('navigation.topLinks.campaigns')}
+              </Link>
+              <Link href="/premium" className="text-orange-400 hover:text-orange-300 transition-colors duration-200">
+                {t('navigation.topLinks.premium')}
+              </Link>
+              <Link href="/sell" className="hover:text-blue-400 transition-colors duration-200">
+                {t('navigation.topLinks.sell')}
+              </Link>
+            </div>
+            
+            {/* Mobile Links */}
+            <div className="flex md:hidden items-center space-x-3 overflow-x-auto">
+              <Link href="/orders" className="hover:text-blue-400 transition-colors duration-200 whitespace-nowrap">
+                {t('navigation.topLinks.orders')}
+              </Link>
+              <Link href="/campaigns" className="hover:text-blue-400 transition-colors duration-200 whitespace-nowrap">
+                {t('navigation.topLinks.campaigns')}
+              </Link>
+              <Link href="/premium" className="text-orange-400 hover:text-orange-300 transition-colors duration-200 whitespace-nowrap">
+                {t('navigation.topLinks.premium')}
+              </Link>
+            </div>
+            
             <div className="hidden md:flex items-center space-x-4">
               <div className="flex items-center space-x-2">
                 <MapPin className="w-4 h-4" />
-                <span>{t('navigation.selectLocation')}</span>
+                <span className="hidden lg:inline">{t('navigation.selectLocation')}</span>
               </div>
             </div>
           </div>
